@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantes - La Vaguada</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="fotos/logo-la-vaguada.jpg" alt="index">
+                </a>
+
+            </div>
+            <div class="Indice">
+                <a href="tiendas.html" style="text-decoration: none; color: inherit;">Tiendas</a>
+                <a href="restaurantes.html" style="text-decoration: none; color: inherit;">Restaurantes</a>
+                <a href="ocio.html" style="text-decoration: none; color: inherit;">Ocio</a>
+                <a href="cine.html" style="text-decoration: none; color: inherit;">Cine</a>
+                <a href="contacto.html" style="text-decoration: none; color: inherit;">Contacto</a>
+                <a href="visitanos.html" style="text-decoration: none; color: inherit;">Visitanos</a>
+                <a href="avisoLegal.html" style="text-decoration: none; color: inherit;">Aviso Legal</a>
+
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Listado de Restaurantes</h2>
+            <p>Explora los mejores restaurantes en La Vaguada.</p>
+
+            <div class="tienda1">
+                <div class="tienda">
+                    <img src="fotos/montaditos.jpg" alt="Montaditos" class="restaurante-img"
+                        data-restaurante="100 Montaditos"
+                        data-descripcion="100 Montaditos es una cadena de restauración española famosa por su amplia variedad de pequeños bocadillos, conocidos como montaditos. Ofrece un ambiente informal y precios asequibles, con opciones para todos los gustos, ideales para compartir con amigos o en familia."
+                        data-modal-img="fotos/foto100mon.jpeg">
+                </div>
+                <div class="tienda">
+                    <img src="fotos/brasayleña.jpg" alt="Brasa" class="restaurante-img"
+                        data-restaurante="Brasa y Leña"
+                        data-descripcion="Brasa y Leña es un restaurante especializado en cocina brasileña al estilo rodizio, donde se sirven diferentes tipos de carnes a la parrilla directamente en la mesa. Ofrece una experiencia única con sabores intensos, un ambiente acogedor y opción de buffet libre."
+                        data-modal-img="fotos/fotoBrasa.jpeg">
+                </div>
+            </div>
+            <div class="tienda1">
+                <div class="tienda">
+                    <img src="fotos/Five.jpg" alt="Five" class="restaurante-img"
+                        data-restaurante="Five Guys"
+                        data-descripcion="Five Guys es una cadena de hamburgueserías conocida por sus hamburguesas personalizables, hechas con ingredientes frescos y de alta calidad. Además de sus famosas hamburguesas, ofrece una variedad de papas fritas y batidos, todo en un ambiente relajado y amigable."
+                        data-modal-img="fotos/fotoFive.jpeg">
+                </div>
+                <div class="tienda">
+                    <img src="fotos/Fridays.jpg" alt="Fridays" class="restaurante-img"
+                        data-restaurante="TGI Fridays"
+                        data-descripcion="TGI Fridays es un restaurante y bar que ofrece una amplia variedad de platos y bebidas en un ambiente relajado y animado. Conocido por sus deliciosas hamburguesas, costillas a la parrilla y cócteles, Fridays es el lugar ideal para disfrutar de una comida casual con amigos o familiares."
+                        data-modal-img="fotos/fotoFridays.jpeg">
+                </div>
+            </div>
+            <div class="tienda1">
+                <div class="tienda">
+                    <img src="fotos/ginos.jpg" alt="Ginos" class="restaurante-img"
+                        data-restaurante="Gino's"
+                        data-descripcion="Gino's es un restaurante especializado en cocina italiana, ofreciendo una amplia variedad de platos tradicionales como pastas, pizzas y ensaladas, elaborados con ingredientes frescos y de calidad. Su ambiente acogedor y su excelente servicio lo convierten en el lugar perfecto para disfrutar de la auténtica comida italiana en cualquier ocasión."
+                        data-modal-img="fotos/fotoGinos.jpeg">
+                </div>
+                <div class="tienda">
+                    <img src="fotos/llaollao.jpg" alt="Llaollao" class="restaurante-img"
+                        data-restaurante="Llaollao"
+                        data-descripcion="Llaollao es una heladería especializada en yogur helado, ofreciendo una gran variedad de toppings y salsas para personalizar tu postre al gusto. Con opciones frescas y saludables, Llaollao se ha convertido en el lugar ideal para disfrutar de un dulce y refrescante capricho."
+                        data-modal-img="fotos/fotoLlaollao.jpeg">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para restaurantes -->
+    <div id="modal-restaurante" class="modal">
+        <div class="modal-content">
+            <span class="close-restaurante">&times;</span>
+            <h3 id="modal-titulo-restaurante"></h3>
+            <img id="modal-imagen-restaurante" src="" alt="Imagen del restaurante" style="width: 100%; height: auto; margin-bottom: 15px;">
+            <p id="modal-descripcion-restaurante"></p>
+        </div>
+    </div>
+
+    <script>
+    document.querySelectorAll(".restaurante-img").forEach(img => {
+        img.addEventListener("click", function(e) {
+            e.preventDefault();
+            const modal = document.getElementById("modal-restaurante");
+            const titulo = document.getElementById("modal-titulo-restaurante");
+            const descripcion = document.getElementById("modal-descripcion-restaurante");
+            const imagen = document.getElementById("modal-imagen-restaurante");
+            titulo.textContent = img.getAttribute("data-restaurante");
+            descripcion.textContent = img.getAttribute("data-descripcion");
+            imagen.src = img.getAttribute("data-modal-img") || img.getAttribute("src");
+            modal.style.display = "block";
+        });
+    });
+    document.querySelector(".close-restaurante").onclick = function() {
+        document.getElementById("modal-restaurante").style.display = "none";
+    };
+    window.addEventListener("click", function(event) {
+        const modal = document.getElementById("modal-restaurante");
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+    </script>
+</body>
+</html>

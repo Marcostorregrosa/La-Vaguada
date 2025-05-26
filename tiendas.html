@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendas - La Vaguada</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="fotos/logo-la-vaguada.jpg" alt="index">
+                </a>
+
+            </div>
+            <div class="Indice">
+                <a href="tiendas.html" style="text-decoration: none; color: inherit;">Tiendas</a>
+                <a href="restaurantes.html" style="text-decoration: none; color: inherit;">Restaurantes</a>
+                <a href="ocio.html" style="text-decoration: none; color: inherit;">Ocio</a>
+                <a href="cine.html" style="text-decoration: none; color: inherit;">Cine</a>
+                <a href="contacto.html" style="text-decoration: none; color: inherit;">Contacto</a>
+                <a href="visitanos.html" style="text-decoration: none; color: inherit;">Visitanos</a>
+                <a href="avisoLegal.html" style="text-decoration: none; color: inherit;">Aviso Legal</a>
+
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Listado de Tiendas</h2>
+            <p>Explora las mejores tiendas en La Vaguada.</p>
+
+            <!-- Tiendas con data para el modal -->
+         <div class="tienda1">
+             <div class="tienda">
+                <img src="fotos/360_F_765150387_1mK4spXrsm8SHLA0kCgLMXCxXjAPQRSQ.jpg" alt="Lego" class="tienda-img" data-tienda="LEGO" data-descripcion="LEGO es una marca reconocida mundialmente por sus bloques de construcción que inspiran la creatividad y el aprendizaje a través del juego." data-enlace="https://www.lego.com/es-es" data-modal-img="fotos/fotolego.jpeg">
+             </div>
+         </div>
+         <div class="tienda1">   
+            <div class="tienda">
+                <img src="fotos/img-28.png" alt="Alehop" class="tienda-img" data-tienda="Alehop" data-descripcion="Alehop es una tienda que ofrece una variedad de productos originales y divertidos, desde regalos hasta artículos de decoración y moda." data-enlace="https://www.ale-hop.com/" data-modal-img="fotos/fotoAle-Hop.jpeg">
+            </div>
+            
+         </div>
+
+         <div class="tienda1">
+           <div class="tienda">
+                <img src="fotos/zara_nuevo_logo.jpg" alt="Zara" class="tienda-img" data-tienda="Zara" data-descripcion="Zara es una tienda de moda reconocida a nivel internacional por ofrecer ropa, calzado y accesorios de estilo actual para mujer, hombre y niños." data-enlace="https://www.zara.com/es/" data-modal-img="fotos/fotoZara.jpeg">
+            </div>
+         </div>
+         <div class="tienda1">   
+            <div class="tienda">
+                <img src="fotos/primark-vector-logo.png" alt="Primark" class="tienda-img" data-tienda="Primark" data-descripcion="Primark es una tienda de moda que ofrece ropa, calzado y accesorios a precios asequibles, con un enfoque en las últimas tendencias." data-enlace="https://www.primark.com/es" data-modal-img="fotos/fotoPrimark.jpeg">
+            </div>
+         </div>
+         <div class="tienda1">
+            <div class="tienda">
+                <img src="fotos/Decathlon_Logo.png" alt="Decathlon" class="tienda-img" data-tienda="Decathlon" data-descripcion="Decathlon es una tienda especializada en artículos deportivos, ofreciendo una amplia gama de productos para diversas disciplinas y actividades al aire libre." data-enlace="https://www.decathlon.es/" data-modal-img="fotos/fotoDecathlon.jpeg" style="background-color: #fff;">                
+            </div>
+         </div>
+         <div class="tienda1">
+            <div class="tienda">
+                <img src="fotos/3-logo-bershka-2023-1024x572.png" alt="Bershka" class="tienda-img" data-tienda="Bershka" data-descripcion="Bershka es una tienda de moda pensada para un público joven y moderno. Ofrece ropa, calzado y complementos con un estilo urbano y actual." data-enlace="https://www.bershka.com/es/" data-modal-img="fotos/fotoBershka.jpeg">
+            </div>
+         </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-titulo"></h3>
+            <img id="modal-imagen" src="" alt="Imagen de la tienda" style="width: 100%; height: auto; margin-bottom: 15px;"> <!-- Nueva imagen -->
+            <p id="modal-descripcion"></p>
+            <a id="modal-enlace" href="#" target="_blank" class="modal-button">Visitar tienda</a>
+        </div>
+    </div>
+
+    
+    <script src="codigo.js"></script>
+    <footer>
+    </footer>
+</body>
+</html>
