@@ -1,0 +1,95 @@
+{
+    "peliculas": [
+      {
+        "titulo": "Ballerina",
+        "año": 2025,
+        "genero": ["Acción", "Crimen"],
+        "duracion": "125 min",
+        "director": "Len Wiseman",
+        "imagen": "peliculas/ballerina.jpeg",
+        "enlace": "https://www.cinesa.es/peliculas/ballerina/HO00002169/"
+      },
+      {
+        "titulo": "Lilo & Stitch",
+        "año": 2025,
+        "genero": ["Aventura", "Familiar"],
+        "duracion": "108 min",
+        "director": "Dean Fleischer Camp",
+        "imagen": "peliculas/lilo.jpg",
+        "enlace": "https://www.cinesa.es/peliculas/lilo-y-stitch/HO00002084/"
+      },
+      {
+        "titulo": "El Jockey",
+        "año": 2025,
+        "genero": ["Drama", "Crimen"],
+        "duracion": "96 min",
+        "director": "Luis Ortega",
+        "imagen": "peliculas/jockey.jpg",
+        "enlace": "https://www.cinesa.es/peliculas/el-jockey/HO00002280/"
+      },
+      {
+        "titulo": "Thunderbolts",
+        "año": 2025,
+        "genero": ["Acción", "Fantasía"],
+        "duracion": "126 min",
+        "director": "Jake Schreier",
+        "imagen": "peliculas/thunder.jpeg",
+        "enlace": "https://www.cinesa.es/peliculas/thunderboltsstar/HO00002038/"
+      },
+      {
+        "titulo": "Tierras perdidas",
+        "año": 2025,
+        "genero": ["Aventura", "Acción"],
+        "duracion": "100 min",
+        "director": "Paul W.S. Anderson",
+        "imagen": "peliculas/tierras.jpeg",
+        "enlace": "https://www.cinesa.es/peliculas/tierras-perdidas/HO00002207/"
+      },
+      {
+        "titulo": "El Casoplón",
+        "año": 2025,
+        "genero": ["Comedia", "Familiar"],
+        "duracion": "88 min",
+        "director": "Joaquín Mazón",
+        "imagen": "peliculas/casa.jpeg",
+        "enlace": "https://www.cinesa.es/peliculas/el-casoplon/HO00002128/"
+      },
+      {
+        "titulo": "Amateur",
+        "año": 2025,
+        "genero": ["Drama", "Suspense"],
+        "duracion": "123 min",
+        "director": "James Hawes",
+        "imagen": "peliculas/amateur.jpg",
+        "enlace": "https://www.cinesa.es/peliculas/-amateur/HO00002080/"
+      },
+      {
+        "titulo": "Raqa",
+        "año": 2025,
+        "genero": ["Thriller", "Drama"],
+        "duracion": "115 min",
+        "director": "Gerardo Herrero",
+        "imagen": "peliculas/raqa.jpg",
+        "enlace": "https://www.yelmocines.es/sinopsis/raqa"
+      },
+      {
+        "titulo": "F1",
+        "año": 2025,
+        "genero": ["Deportes", "Drama"],
+        "duracion": "140 min",
+        "director": "Joseph Kosinski",
+        "imagen": "peliculas/f1.webp",
+        "enlace": "https://www.cinesa.es/peliculas/f1"
+      },
+      {
+        "titulo": "Until Dawn",
+        "año": 2025,
+        "genero": ["Terror"],
+        "duracion": "102 min",
+        "director": "David F. Sandberg",
+        "imagen": "peliculas/down.jpg",
+        "enlace": "https://www.cinesa.es/peliculas/until-dawn/HO00002115/"
+      }
+    ]
+  }
+  
