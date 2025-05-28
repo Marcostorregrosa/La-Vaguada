@@ -34,3 +34,22 @@ window.addEventListener("click", (event) => {
         modal.style.display = "none";
     }
 });
+
+// Formulario
+document.getElementById('formularioContacto').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const email = document.getElementById('email').value;
+  const confirmarEmail = document.getElementById('confirmarEmail').value;
+
+  if (email !== confirmarEmail) {
+    alert("⚠️ Los correos electrónicos no coinciden.");
+    return;
+  }
+
+  const confirmacion = confirm("¿Deseas enviar el formulario con los datos introducidos?");
+  if (confirmacion) {
+    alert("✅ Formulario enviado correctamente.");
+    this.reset(); // Limpia el formulario
+  }
+});
