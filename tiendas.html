@@ -8,7 +8,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-     @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        .tienda-img {
+            border: 4px solid #ff9800;
+            border-radius: 12px;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("fotos/fondo1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            font-family: Arial, sans-serif;
+        }
+    </style>
     </style>
 </head>
 <body>
@@ -16,9 +32,8 @@
         <div class="cabecera">
             <div class="logo">
                 <a href="index.html">
-                    <img src="fotos/logo-la-vaguada.jpg" alt="index">
+                    <img src="fotos/logo.png" alt="index">
                 </a>
-
             </div>
             <div class="Indice">
                 <a href="tiendas.html" style="text-decoration: none; color: inherit;">Tiendas</a>
@@ -28,89 +43,124 @@
                 <a href="contacto.html" style="text-decoration: none; color: inherit;">Contacto</a>
                 <a href="visitanos.html" style="text-decoration: none; color: inherit;">Visitanos</a>
                 <a href="avisoLegal.html" style="text-decoration: none; color: inherit;">Aviso Legal</a>
-
             </div>
-        </div>
         </div>
     </header>
     <main>
         <section>
             <h2>Listado de Tiendas</h2>
             <p>Explora las mejores tiendas en La Vaguada.</p>
-
             <!-- Tiendas con data para el modal -->
-         <div class="tienda1">
-             <div class="tienda">
-                <img src="fotos/360_F_765150387_1mK4spXrsm8SHLA0kCgLMXCxXjAPQRSQ.jpg" alt="Lego" class="tienda-img" data-tienda="LEGO" data-descripcion="LEGO es una marca reconocida mundialmente por sus bloques de construcción que inspiran la creatividad y el aprendizaje a través del juego." data-enlace="https://www.lego.com/es-es" data-modal-img="fotos/fotolego.jpeg" style="width:360px;cursor:pointer;">
-             </div>
-         </div>
-         <div class="tienda1">   
-            <div class="tienda">
-                <img src="fotos/img-28.png" alt="Alehop" class="tienda-img" data-tienda="Alehop" data-descripcion="Alehop es una tienda que ofrece una variedad de productos originales y divertidos, desde regalos hasta artículos de decoración y moda." data-enlace="https://www.ale-hop.com/" data-modal-img="fotos/fotoAle-Hop.jpeg" style="width:360px;cursor:pointer;">
+            <div class="tienda1">
+                <div class="tienda">
+                    <img src="fotos/360_F_765150387_1mK4spXrsm8SHLA0kCgLMXCxXjAPQRSQ.jpg" alt="Lego" class="tienda-img"
+                        data-tienda="LEGO"
+                        data-descripcion="LEGO es una marca reconocida mundialmente por sus bloques de construcción que inspiran la creatividad y el aprendizaje a través del juego."
+                        data-enlace="https://www.lego.com/es-es"
+                        data-modal-img="fotos/fotolego.jpeg"
+                        data-enlace="https://www.lego.com/es-es/stores?y_source=1_MjkyMTMyMjAtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D&consent-modal=show"
+                        style="width:360px;cursor:pointer;">
+                </div>
+                <div class="tienda">
+                    <img src="fotos/3-logo-bershka-2023-1024x572.png" alt="Bershka" class="tienda-img"
+                        data-tienda="Bershka"
+                        data-descripcion="Bershka es una tienda de moda pensada para un público joven y moderno. Ofrece ropa, calzado y complementos con un estilo urbano y actual."
+                        data-enlace="https://www.bershka.com/es/"
+                        data-modal-img="fotos/fotoBershka.jpeg"
+                        data-enlace="https://www.bershka.com/es/"
+                        style="width:360px;cursor:pointer;">
+                </div>
             </div>
-            
-         </div>
-
-         <div class="tienda1">
-           <div class="tienda">
-                <img src="fotos/zara_nuevo_logo.jpg" alt="Zara" class="tienda-img" data-tienda="Zara" data-descripcion="Zara es una tienda de moda reconocida a nivel internacional por ofrecer ropa, calzado y accesorios de estilo actual para mujer, hombre y niños." data-enlace="https://www.zara.com/es/" data-modal-img="fotos/fotoZara.jpeg" style="width:360px;cursor:pointer;">
+            <div class="tienda1">
+                <div class="tienda">
+                    <img src="fotos/img-28.png" alt="Alehop" class="tienda-img"
+                        data-tienda="Alehop"
+                        data-descripcion="Alehop es una tienda que ofrece una variedad de productos originales y divertidos, desde regalos hasta artículos de decoración y moda."
+                        data-enlace="https://www.ale-hop.com/"
+                        data-modal-img="fotos/fotoAle-Hop.jpeg"
+                        data-enlace="https://www.ale-hop.org/es"
+                        style="width:360px;cursor:pointer;">
+                </div>
+                <div class="tienda">
+                    <img src="fotos/zara_nuevo_logo.jpg" alt="Zara" class="tienda-img"
+                        data-tienda="Zara"
+                        data-descripcion="Zara es una tienda de moda reconocida a nivel internacional por ofrecer ropa, calzado y accesorios de estilo actual para mujer, hombre y niños."
+                        data-enlace="https://www.zara.com/es/"
+                        data-modal-img="fotos/fotoZara.jpeg"
+                        data-enlace="https://www.zara.com/es/"
+                        style="width:360px;cursor:pointer;">
+                </div>
             </div>
-         </div>
-         <div class="tienda1">   
-            <div class="tienda">
-                <img src="fotos/primark-vector-logo.png" alt="Primark" class="tienda-img" data-tienda="Primark" data-descripcion="Primark es una tienda de moda que ofrece ropa, calzado y accesorios a precios asequibles, con un enfoque en las últimas tendencias." data-enlace="https://www.primark.com/es" data-modal-img="fotos/fotoPrimark.jpeg" style="width:360px;cursor:pointer;">
+            <div class="tienda1">
+                <div class="tienda">
+                    <img src="fotos/primark-vector-logo.png" alt="Primark" class="tienda-img"
+                        data-tienda="Primark"
+                        data-descripcion="Primark es una tienda de moda que ofrece ropa, calzado y accesorios a precios asequibles, con un enfoque en las últimas tendencias."
+                        data-enlace="https://www.primark.com/es"
+                        data-modal-img="fotos/fotoPrimark.jpeg"
+                        data-enlace="https://www.primark.com/es-es"
+                        style="width:360px;cursor:pointer;">
+                </div>
+                <div class="tienda">
+                    <img src="fotos/Decathlon_Logo.png" alt="Decathlon" class="tienda-img"
+                        data-tienda="Decathlon"
+                        data-descripcion="Decathlon es una tienda especializada en artículos deportivos, ofreciendo una amplia gama de productos para diversas disciplinas y actividades al aire libre."
+                        data-enlace="https://www.decathlon.es/"
+                        data-modal-img="fotos/fotoDecathlon.jpeg"
+                        data-enlace="https://www.decathlon.es/es/"
+                        style="width:360px;cursor:pointer;background-color: #fff;">
+                </div>
             </div>
-         </div>
-         <div class="tienda1">
-            <div class="tienda">
-                <img src="fotos/Decathlon_Logo.png" alt="Decathlon" class="tienda-img" data-tienda="Decathlon" data-descripcion="Decathlon es una tienda especializada en artículos deportivos, ofreciendo una amplia gama de productos para diversas disciplinas y actividades al aire libre." data-enlace="https://www.decathlon.es/" data-modal-img="fotos/fotoDecathlon.jpeg" style="width:360px;cursor:pointer;background-color: #fff;">                
-            </div>
-         </div>
-         <div class="tienda1">
-            <div class="tienda">
-                <img src="fotos/3-logo-bershka-2023-1024x572.png" alt="Bershka" class="tienda-img" data-tienda="Bershka" data-descripcion="Bershka es una tienda de moda pensada para un público joven y moderno. Ofrece ropa, calzado y complementos con un estilo urbano y actual." data-enlace="https://www.bershka.com/es/" data-modal-img="fotos/fotoBershka.jpeg" style="width:360px;cursor:pointer;">
-            </div>
-         </div>
         </section>
     </main>
-
-    <!-- Modal -->
     <!-- Modal único para todos -->
-<div class="modal" id="restauranteModal">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="modalTitulo"></h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <img id="modalImagen" src="" alt="" class="img-fluid mb-3">
-        <p id="modalDescripcion"></p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
+    <div class="modal" id="restauranteModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalTitulo"></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImagen" src="" alt="" class="img-fluid mb-3">
+                    <p id="modalDescripcion"></p>
+                </div>
+                <div class="modal-footer">
+                    <button id="modalEnlaceBtn" type="button" class="btn btn-danger">Enlace</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<script>
-document.querySelectorAll('.tienda-img').forEach(img => {
-    img.addEventListener('click', () => {
-        const nombre = img.dataset.tienda;
-        const descripcion = img.dataset.descripcion;
-        const imagen = img.dataset.modalImg;
+    <script>
+        document.querySelectorAll('.tienda-img').forEach(img => {
+            img.addEventListener('click', () => {
+                const nombre = img.dataset.tienda;
+                const descripcion = img.dataset.descripcion;
+                const imagen = img.dataset.modalImg;
+                const enlace = img.dataset.enlace || "";
 
-        document.getElementById('modalTitulo').textContent = nombre;
-        document.getElementById('modalDescripcion').textContent = descripcion;
-        document.getElementById('modalImagen').src = imagen;
-        document.getElementById('modalImagen').alt = nombre;
+                document.getElementById('modalTitulo').textContent = nombre;
+                document.getElementById('modalDescripcion').textContent = descripcion;
+                document.getElementById('modalImagen').src = imagen;
+                document.getElementById('modalImagen').alt = nombre;
 
-        // Mostrar el modal
-        const modal = new bootstrap.Modal(document.getElementById('restauranteModal'));
-        modal.show();
-    });
-});
-</script>
-    
+                // Cambiar el enlace del botón Close
+                const btn = document.getElementById('modalEnlaceBtn');
+                btn.onclick = function() {
+                    if (enlace) {
+                        window.location.href = enlace;
+                    } else {
+                        // fallback: cerrar modal si no hay enlace
+                        const modal = bootstrap.Modal.getInstance(document.getElementById('restauranteModal'));
+                        modal.hide();
+                    }
+                };
+
+                // Mostrar el modal
+                const modal = new bootstrap.Modal(document.getElementById('restauranteModal'));
+                modal.show();
+            });
+        });
+    </script>
 </body>
 </html>
