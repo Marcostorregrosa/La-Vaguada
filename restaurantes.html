@@ -6,10 +6,34 @@
     <title>Restaurantes - La Vaguada</title>
     <link rel="stylesheet" href="main.css"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-     @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        #modalImagen {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 24px;
+        }
+        .restaurante-img {
+            border: 4px solid #28a745;
+            border-radius: 12px;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("fotos/fondo2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            font-family: Arial, sans-serif;
+        }
+    </style>
     </style>
 </head>
 <body>
@@ -17,9 +41,8 @@
         <div class="cabecera">
             <div class="logo">
                 <a href="index.html">
-                    <img src="fotos/logo-la-vaguada.jpg" alt="index">
+                    <img src="fotos/logo.png" alt="index">
                 </a>
-
             </div>
             <div class="Indice">
                 <a href="tiendas.html" style="text-decoration: none; color: inherit;">Tiendas</a>
@@ -29,36 +52,29 @@
                 <a href="contacto.html" style="text-decoration: none; color: inherit;">Contacto</a>
                 <a href="visitanos.html" style="text-decoration: none; color: inherit;">Visitanos</a>
                 <a href="avisoLegal.html" style="text-decoration: none; color: inherit;">Aviso Legal</a>
-
             </div>
         </div>
-        
     </header>
     <main>
         <section>
             <h2>Listado de Restaurantes</h2>
             <p>Explora los mejores restaurantes en La Vaguada.</p>
-
-            
-           
-
-
-
             <div class="tienda1">
                 <div class="tienda">
                     <img src="fotos/montaditos.jpg" alt="100 Montaditos" class="restaurante-img"
                         data-restaurante="100 Montaditos"
                         data-descripcion="100 Montaditos es un restaurante español famoso por su amplia variedad de montaditos, pequeños bocadillos que se sirven con diferentes ingredientes. Con un ambiente informal y acogedor, es el lugar ideal para disfrutar de una comida rápida y sabrosa con amigos o familiares."
                         data-modal-img="fotos/foto100mon.jpeg"
-                        style="width:360px;cursor:pointer;">
-
+                        data-enlace="https://spain.100montaditos.com/es/"
+                        style="width:420px;cursor:pointer;">
                 </div>
                 <div class="tienda">
                     <img src="fotos/brasayleña.jpg" alt="Brasa" class="restaurante-img"
                         data-restaurante="Brasa y Leña"
                         data-descripcion="Brasa y Leña es un restaurante especializado en cocina brasileña al estilo rodizio, donde se sirven diferentes tipos de carnes a la parrilla directamente en la mesa. Ofrece una experiencia única con sabores intensos, un ambiente acogedor y opción de buffet libre."
                         data-modal-img="fotos/fotoBrasa.jpeg"
-                        style="width:360px;cursor:pointer;">
+                        data-enlace="https://brasaylena.com/"
+                        style="width:420px;cursor:pointer;">
                 </div>
             </div>
             <div class="tienda1">
@@ -67,14 +83,16 @@
                         data-restaurante="Five Guys"
                         data-descripcion="Five Guys es una cadena de hamburgueserías conocida por sus hamburguesas personalizables, hechas con ingredientes frescos y de alta calidad. Además de sus famosas hamburguesas, ofrece una variedad de papas fritas y batidos, todo en un ambiente relajado y amigable."
                         data-modal-img="fotos/fotoFive.jpeg"
-                        style="width:360px;cursor:pointer;">
+                        data-enlace="https://fiveguys.es/"
+                        style="width:420px;cursor:pointer;">
                 </div>
                 <div class="tienda">
                     <img src="fotos/Fridays.jpg" alt="Fridays" class="restaurante-img"
                         data-restaurante="TGI Fridays"
                         data-descripcion="TGI Fridays es un restaurante y bar que ofrece una amplia variedad de platos y bebidas en un ambiente relajado y animado. Conocido por sus deliciosas hamburguesas, costillas a la parrilla y cócteles, Fridays es el lugar ideal para disfrutar de una comida casual con amigos o familiares."
                         data-modal-img="fotos/fotoFridays.jpeg"
-                        style="width:360px;cursor:pointer;">
+                        data-enlace="https://www.tgifridays.es/"
+                        style="width:420px;cursor:pointer;">
                 </div>
             </div>
             <div class="tienda1">
@@ -83,55 +101,68 @@
                         data-restaurante="Gino's"
                         data-descripcion="Gino's es un restaurante especializado en cocina italiana, ofreciendo una amplia variedad de platos tradicionales como pastas, pizzas y ensaladas, elaborados con ingredientes frescos y de calidad. Su ambiente acogedor y su excelente servicio lo convierten en el lugar perfecto para disfrutar de la auténtica comida italiana en cualquier ocasión."
                         data-modal-img="fotos/fotoGinos.jpeg"
-                        style="width:360px;cursor:pointer;">
+                        data-enlace="https://www.ginos.es/"
+                        style="width:420px;cursor:pointer;">
                 </div>
                 <div class="tienda">
                     <img src="fotos/llaollao.jpg" alt="Llaollao" class="restaurante-img"
                         data-restaurante="Llaollao"
                         data-descripcion="Llaollao es una heladería especializada en yogur helado, ofreciendo una gran variedad de toppings y salsas para personalizar tu postre al gusto. Con opciones frescas y saludables, Llaollao se ha convertido en el lugar ideal para disfrutar de un dulce y refrescante capricho."
                         data-modal-img="fotos/fotoLlaollao.jpeg"
-                        style="width:360px;cursor:pointer;">
+                        data-enlace="https://www.llaollaoweb.com/es/"
+                        style="width:420px;cursor:pointer;">
                 </div>
             </div>
-            
         </section>
     </main>
-<!-- Modal único para todos -->
-<div class="modal" id="restauranteModal">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="modalTitulo"></h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <img id="modalImagen" src="" alt="" class="img-fluid mb-3">
-        <p id="modalDescripcion"></p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
+    <!-- Modal único para todos -->
+    <div class="modal" id="restauranteModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalTitulo"></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImagen" src="" alt="" class="img-fluid mb-3">
+                    <p id="modalDescripcion"></p>
+                </div>
+                <div class="modal-footer">
+                    <button id="modalEnlaceBtn" type="button" class="btn btn-danger">Enlace</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<script>
-document.querySelectorAll('.restaurante-img').forEach(img => {
-    img.addEventListener('click', () => {
-        const nombre = img.dataset.restaurante;
-        const descripcion = img.dataset.descripcion;
-        const imagen = img.dataset.modalImg;
+    <script>
+        document.querySelectorAll('.restaurante-img').forEach(img => { 
+            img.addEventListener('click', () => {
+                const nombre = img.dataset.restaurante;
+                const descripcion = img.dataset.descripcion;
+                const imagen = img.dataset.modalImg;
+                const enlace = img.dataset.enlace || "";
 
-        document.getElementById('modalTitulo').textContent = nombre;
-        document.getElementById('modalDescripcion').textContent = descripcion;
-        document.getElementById('modalImagen').src = imagen;
-        document.getElementById('modalImagen').alt = nombre;
+                document.getElementById('modalTitulo').textContent = nombre;
+                document.getElementById('modalDescripcion').textContent = descripcion;
+                document.getElementById('modalImagen').src = imagen;
+                document.getElementById('modalImagen').alt = nombre;
 
-        // Mostrar el modal
-        const modal = new bootstrap.Modal(document.getElementById('restauranteModal'));
-        modal.show();
-    });
-});
-</script>
+                // Cambiar el enlace del botón Close
+                const btn = document.getElementById('modalEnlaceBtn');
+                btn.onclick = function() {
+                    if (enlace) {
+                        window.location.href = enlace;
+                    } else {
+                        // fallback: cerrar modal si no hay enlace
+                        const modal = bootstrap.Modal.getInstance(document.getElementById('restauranteModal'));
+                        modal.hide();
+                    }
+                };
 
+                // Mostrar el modal
+                const modal = new bootstrap.Modal(document.getElementById('restauranteModal'));
+                modal.show();
+            });
+        });
+    </script>
 </body>
 </html>
