@@ -7,7 +7,7 @@ El objetivo de este proyecto es crear un sitio web informativo que represente de
 ## 🛒 Centro Comercial Elegido
 
 **La Vaguada** – Primer gran centro comercial de Madrid, inaugurado en 1983. Se ha convertido en un referente de compras, ocio y gastronomía en la capital.  
-Sitio oficial: [[https://www.lavaguada.com](https://www.lavaguada.com)](https://enlavaguada.com/)
+Sitio oficial: (https://enlavaguada.com/)
 
 ## 👥 Participantes
 
